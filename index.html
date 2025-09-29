@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glotón Delivery - Carta Digital</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+      color: #333;
+    }
+    header {
+      background: linear-gradient(90deg, #ff3b3f, #ff9a3d);
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+    header img {
+      width: 120px;
+      display: block;
+      margin: 0 auto 10px;
+    }
+    h1 {
+      margin: 0;
+      font-size: 2.5em;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    }
+    .menu-section {
+      padding: 30px 20px;
+    }
+    .menu-section h2 {
+      color: #ff3b3f;
+      font-size: 1.8em;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    .items {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+    }
+    .item {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      padding: 15px;
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .item:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 14px rgba(0,0,0,0.25);
+    }
+    .item img {
+      width: 100%;
+      max-height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    .item h3 {
+      margin: 10px 0 5px;
+      color: #ff3b3f;
+    }
+    .price {
+      color: #ff9a3d;
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.jpg" alt="Logo Glotón Delivery">
+    <h1>Glotón Delivery</h1>
+    <p>¡Las mejores pizzas, bebidas y promos para ti!</p>
+  </header>
+
+  <section class="menu-section">
+    <h2>🍕 Pizzas</h2>
+    <div class="items">
+      <div class="item">
+        <img src="https://i.ibb.co/s1M7vr3/margarita.jpg" alt="Pizza Clásica Margarita">
+        <h3>Pizza Clásica</h3>
+        <p>Mozzarella, tomate y albahaca fresca.</p>
+        <p class="price">S/ 22.00</p>
+      </div>
+      <div class="item">
+        <img src="https://i.ibb.co/W2f3m2F/pepperoni.jpg" alt="Pizza Americana">
+        <h3>Pizza Americana</h3>
+        <p>Pepperoni, mozzarella y salsa especial.</p>
+        <p class="price">S/ 25.00</p>
+      </div>
+      <div class="item">
+        <img src="https://i.ibb.co/zfSnchS/suprema.jpg" alt="Pizza Suprema">
+        <h3>Pizza Suprema</h3>
+        <p>Jamón, champiñones, pimientos y aceitunas.</p>
+        <p class="price">S/ 28.00</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="menu-section">
+    <h2>🥤 Bebidas</h2>
+    <div class="items">
+      <div class="item">
+        <img src="https://i.ibb.co/7bWsy7V/coca.jpg" alt="Gaseosa Coca Cola">
+        <h3>Coca Cola</h3>
+        <p>Botella de 1.5L</p>
+        <p class="price">S/ 8.00</p>
+      </div>
+      <div class="item">
+        <img src="https://i.ibb.co/nwVV9L7/limonada.jpg" alt="Limonada Natural">
+        <h3>Limonada</h3>
+        <p>Refrescante y natural.</p>
+        <p class="price">S/ 6.00</p>
+      </div>
+      <div class="item">
+        <img src="https://i.ibb.co/M9LWKnL/chicha.jpg" alt="Chicha Morada">
+        <h3>Chicha Morada</h3>
+        <p>Bebida tradicional peruana.</p>
+        <p class="price">S/ 6.00</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="menu-section">
+    <h2>🔥 Promociones</h2>
+    <div class="items">
+      <div class="item">
+        <img src="https://i.ibb.co/mbxrcHh/combo1.jpg" alt="Combo Familiar">
+        <h3>Combo Familiar</h3>
+        <p>1 Pizza grande + Gaseosa 1.5L</p>
+        <p class="price">S/ 35.00</p>
+      </div>
+      <div class="item">
+        <img src="https://i.ibb.co/nkTgnZB/combo2.jpg" alt="Combo Amigos">
+        <h3>Combo Amigos</h3>
+        <p>2 Pizzas medianas + 1 Limonada</p>
+        <p class="price">S/ 50.00</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>📍 Glotón Delivery - Tu pizza favorita a un clic</p>
+    <p>📞 987 654 321 | 📲 WhatsApp: 912 345 678</p>
+  </footer>
+</body>
+</html>
